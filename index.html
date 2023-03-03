@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9cdb743663.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="pics/loggo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Shreejan</span> Bhattarai<br>from Nepal</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ------------ABOUT---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="pics/about.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>
+                        I am an enthusiastic, self-motivated, reliable, responsible and hard working person.
+                        I am a mature team worker and adaptable to all challenging situations.
+                        I am able to work well both in a team environment as well as using own initiative.
+                        I am able to work well under pressure and adhere to strict deadlines.
+                    </p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                  <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing WEB/APP interfaces</li>
+                        <li><span>WEB Development</span><br>Web app development</li>
+                        <li><span>App Development</span><br>Building Android/IOS Apps</li>
+                    </ul>
+                
+                  </div>
+                  <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2021-Current</span><br>Designing WEB/APP interfaces</li>
+                        <li><span>2019-2021</span><br>Web app development</li>
+                        <li><span>2017-2019</span><br>Building Android/IOS Apps</li>
+                    </ul>
+                   
+                  </div>
+                  <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2017-2019</span><br>SEE graduation from NHSS</li>
+                        <li><span>2019-2021</span><br>+2 in Science from kalika</li>
+                        <li><span>2021-Current</span><br>Bachelor in CSIT at BMC</li>
+                    </ul>
+                
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------services-------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+        <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>Web design refers to the design of websites that are displayed on the internet. 
+                It usually refers to the user experience aspects of website development rather than software development.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Design</h2>
+                <p>Image result for ui ux define
+                    UX design involves managing the user journey as they interact with a product or service,
+                     while UI design focuses on the actual construction of that product or service's interface. 
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>App design is an ongoing process comprising user experience (UX) and user interface (UI) elements.Getting started. Set the goal of your app. Make a plan.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+
+    </div>
+        </div>
+    </div>
+    <!-- ----------PORTFOLIO----------- -->
+    <div id="portfolio">
+        <div class="container"></div>
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+            <img src="pics/work-1.png">
+            <div class="layer">
+                <h3>Social Media App</h3>
+                <p>This app connects you to the talented people around the world.
+                    Download it from Playstore</p>
+                  <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="pics/work-2.png">
+            <div class="layer">
+                <h3>Music App</h3>
+                <p>This app connects you to the talented people around the world.
+                    Download it from Playstore</p>
+                  <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="pics/work-3.png">
+            <div class="layer">
+                <h3>Online Shopping App</h3>
+                <p>This app connects you to the talented people around the world.
+                    Download it from Playstore</p>
+                  <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+           
+        </div>
+        </div>
+        <a href="#"class='btn'>See more</a>
+    </div>
+
+
+    </div>
+    <!-- ------------contact---------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> Shreejanid123@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i> +9779866583430</p>
+                    <div class="social-icons">
+                        <a href="https://fb.com/shreejan.bhattarai"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://youtube.com/@shreey2926"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://instagram.com/i_am_shreey001"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/shreey001"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="pics/CV_2023-02-27_Shreey_Bhattarai.pdf"download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="Text" name="Name" placeholder="Your Name" required>
+                        <input type="Email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="Submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+            <div class="copyright">
+                <p>Copyright © Shreey.Made by Shreejan Bhattarai<i class="fa-solid fa-face-smile"></i></p>
+            </div>
+        
+
+
+    </div>
+
+
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+</body>
+</html>

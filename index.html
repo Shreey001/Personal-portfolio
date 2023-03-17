@@ -7,6 +7,18 @@
     <title>Shreejan Bhattarai - Developer | content Creator | Fullstack Dev</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/9cdb743663.js" crossorigin="anonymous"></script>
+    <script src="app.js" type="text/javascript"></script>
+
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init("ioD48n_66IBd-ernp");
+})();
+</script> <!-- Add this closing script tag -->
+
+
 </head>
 <body>
     <div id="header">
@@ -80,7 +92,7 @@
     <!-- ------------services-------------- -->
     <div id="services">
         <div class="container">
-            <h1 class="sub-title">My Services</h1>
+            <h2 class="sub-title">My Services</h2>
     <div class="services-list">
         <div>
             <i class="fa-solid fa-code"></i>
@@ -111,7 +123,7 @@
     <!-- ----------PORTFOLIO----------- -->
     <div id="portfolio">
         <div class="container"></div>
-        <h1 class="sub-title">My Work</h1>
+        <h3 class="sub-title">My Work</h3>
         <div class="work-list">
             <div class="work">
             <img src="pics/calll.png">
@@ -152,23 +164,23 @@
         <div class="container">
             <div class="row">
                 <div class="contact-left">
-                    <h1 class="sub-title">Contact me</h1>
+                    <h1 class="sub-title4">Contact me</h1>
                     <p><i class="fa-solid fa-paper-plane"></i> Shreejanid123@gmail.com</p>
-                    <p><i class="fa-solid fa-phone-volume"></i> +9779866583430</p>
+                    <p><i class="fa-solid fa-people-arrows"></i>Social Medias<i class="fa-solid fa-arrow-down"></i></p>
                     <div class="social-icons">
                         <a href="https://fb.com/shreejan.bhattarai"><i class="fa-brands fa-facebook"></i></a>
                         <a href="https://youtube.com/@shreey2926"><i class="fa-brands fa-youtube"></i></a>
                         <a href="https://instagram.com/i_am_shreey001"><i class="fa-brands fa-instagram"></i></a>
                         <a href="https://github.com/shreey001"><i class="fa-brands fa-github"></i></a>
                     </div>
-                    <a href="pics/CV_2023-02-27_Shreey_Bhattarai.pdf"download class="btn btn2">Download CV</a>
+                    <a href="https://drive.google.com/file/d/1xGOeu9wJxnrH_RKNSs4F9D5Y5tqaCeXq/view?usp=sharing"download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
                     <form>
-                        <input type="Text" name="Name" placeholder="Your Name" required>
-                        <input type="Email" name="email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="Submit" class="btn btn2">Submit</button>
+                        <input type="Text" id="Name" placeholder="Your Name" required>
+                        <input type="Email" id="email" placeholder="Your Email" required>
+                        <textarea id="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button class="btn btn2" onclick="SendMail()">Submit</button>
                     </form>
                 </div>
             </div>
@@ -210,6 +222,11 @@
     function closemenu(){
         sidemenu.style.right="-200px";
     }
+
 </script>
+
+
+
+
 </body>
 </html>

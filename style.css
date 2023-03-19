@@ -8,7 +8,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background: #050505;
+    background: #000000;
     color:#fff
 }
 #header{
@@ -32,8 +32,28 @@ flex-wrap: wrap;
 }
 .logo{
     width: 140px;
-
 }
+
+    #icon{
+        width: 30px; 
+        cursor: pointer;
+    }
+nav ul{
+    flex: 1;
+    text-align: right;
+}
+:root{
+    --primary-color: #edf2fc
+    --secondary-color: #fff
+}
+
+
+
+
+
+
+
+
 nav ul li{
     display: inline-block;
     list-style: none;
